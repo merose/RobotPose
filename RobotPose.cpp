@@ -3,7 +3,11 @@
 
 // Creates a new instance and calculates the distance per tick and the
 // delta heading angle per tick.
-RobotPose::RobotPose(float wheelDiameter, float wheelSeparation, int ticksPerRev) {
+RobotPose::RobotPose(
+  float wheelDiameter,
+  float wheelSeparation,
+  float ticksPerRev
+) {
   distancePerTick = wheelDiameter * PI / ticksPerRev;
   anglePerTick = distancePerTick / wheelSeparation * 180.0 / PI;
   

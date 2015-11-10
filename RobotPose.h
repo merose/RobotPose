@@ -17,7 +17,7 @@ class RobotPose {
    * @param wheelSeparation the separation between the two wheels
    * @param ticksPerRev the number of encoder ticks per revolution of a wheel
    */
-  RobotPose(float wheelDiameter, float wheelSeparation, int ticksPerRev);
+  RobotPose(float wheelDiameter, float wheelSeparation, float ticksPerRev);
     
   /**
    * Gets the current, calculated heading. The heading is updated by reading
